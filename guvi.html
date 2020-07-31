@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pan Card Update Form</title>
+		<header>Request For New PAN Card Or/And Changes Or Correction in PAN Data</header>
+<h6>Fields marked with * (asterisk) are mandatory. . To avoid mistake(s), please refer guidelines and instructions.</h6>
+
+	<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<form autocomplete="off">
+			<table border="1" cellspacing="0" cellpadding="0" width="100%">
+				<tbody>
+					<tr>
+						<td width="2%"></td>
+						<td width="98%" colspan="2">
+							<label for="citizen">
+								Whether a citizen of India?
+							</label>
+							&nbsp;&nbsp;
+							<input
+								type="radio"
+								name="citizen"
+								value="Yes"
+								required
+							/>
+							Yes &nbsp;
+							<input type="radio" name="citizen" value="NO" />
+							No  &nbsp;
+						</td>
+					</tr>
+					<br />
+					<tr>
+						<td width="2%"></td>
+						<td width="98%" colspan="2">
+							<label for="pan">PAN: </label>
+							<input type="number" name="pan" required />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="98%" colspan="2">
+							1. Name
+						</td>
+					</tr>
+					<br />
+					<tr>
+						<td width="2%"></td>
+						<td width="98%" colspan="2">
+							<label for="title">Title: </label>
+							<input type="radio" name="title" />
+							Mr.
+							<input type="radio" name="title" />
+							Mrs.
+							<input type="radio" name="title" />
+							Ms.
+						</td>
+					</tr>
+					<br />
+					<tr>
+						<td width="2%"></td>
+						<td width="98%" colspan="2">
+							<table width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<label for="lastname">
+											Last Name:
+										</label>
+										<br />
+										<input type="text" name="lastname" />
+									</td>
+									<td>
+										<label for="firstname">
+											First Name:
+										</label>
+										<br />
+										<input type="text" name="firstname" />
+									</td>
+									<td>
+										<label for="middlename">
+											Middle Name:
+										</label>
+										<br />
+										<input type="text" name="middlename" />
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="98%" colspan="2">
+							<label>
+								Name as you would like it printed on the card
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="98%" colspan="2">
+							<input type="text" name="printName" />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="98%" colspan="2">
+							Details of Parents
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							Whether mother is single parent and you wish to
+							apply for PAN by furnishing the name of your mother
+							only
+						</td>
+						<td width="49%">
+							Yes
+							<input type="radio" name="motherParent" />
+							No
+							<input type="radio" name="motherParent" />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="98%" colspan="2">
+							<label>Father's name</label>
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="98%" colspan="2">
+							<table width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<label for="lastname">
+											Last Name:
+										</label>
+										<br />
+										<input type="text" name="lastname" />
+									</td>
+									<td>
+										<label for="firstname">
+											First Name:
+										</label>
+										<br />
+										<input type="text" name="firstname" />
+									</td>
+									<td>
+										<label for="middlename">
+											Middle Name:
+										</label>
+										<br />
+										<input type="text" name="middlename" />
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="98%" colspan="2">
+							<label>Mother's name</label>
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="98%" colspan="2">
+							<table width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<label for="lastname">
+											Last Name:
+										</label>
+										<br />
+										<input type="text" name="lastname" />
+									</td>
+									<td>
+										<label for="firstname">
+											First Name:
+										</label>
+										<br />
+										<input type="text" name="firstname" />
+									</td>
+									<td>
+										<label for="middlename">
+											Middle Name:
+										</label>
+										<br />
+										<input type="text" name="middlename" />
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							Select Parent Name to be printed on the card
+						</td>
+						<td width="49%">
+							Father's Name
+							<input type="radio" name="parentName" />
+							&nbsp;&nbsp; Mother's Name
+							<input type="radio" name="parentName" />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							Date of Birth
+						</td>
+						<td width="49%">
+							<table>
+								<tr>
+									<td>
+										DD
+										<br />
+										<select name="dd">
+											<option value=""> DD</option>
+											<option value="01"> 1</option>
+											<option value="02"> 2</option>
+											<option value="03"> 3</option>
+											<option value="04"> 4</option>
+											<option value="05"> 5</option>
+											<option value="06"> 6</option>
+											<option value="07"> 7</option>
+											<option value="08"> 8</option>
+											<option value="09"> 9</option>
+											<option value="10"> 10</option>
+											<option value="11"> 11</option>
+											<option value="12"> 12</option>
+											<option value="13"> 13</option>
+											<option value="14"> 14</option>
+											<option value="15"> 15</option>
+											<option value="16"> 16</option>
+											<option value="17"> 17</option>
+											<option value="18"> 18</option>
+											<option value="19"> 19</option>
+											<option value="20"> 20</option>
+											<option value="21"> 21</option>
+											<option value="22"> 22</option>
+											<option value="23"> 23</option>
+											<option value="24"> 24</option>
+											<option value="25"> 25</option>
+											<option value="26"> 26</option>
+											<option value="27"> 27</option>
+											<option value="28"> 28</option>
+											<option value="29"> 29</option>
+											<option value="30"> 30</option>
+											<option value="31"> 31</option>
+										</select>
+									</td>
+									<td>
+										MM
+										<br />
+										<select name="mm">
+											<option value=""> MM</option>
+											<option value="01"> JAN</option>
+											<option value="02"> FEB</option>
+											<option value="03"> MAR</option>
+											<option value="04"> APR</option>
+											<option value="05"> MAY</option>
+											<option value="06"> JUN</option>
+											<option value="07"> JUL</option>
+											<option value="08"> AUG</option>
+											<option value="09"> SEP</option>
+											<option value="10"> OCT</option>
+											<option value="11"> NOV</option>
+											<option value="12"> DEC</option>
+										</select>
+									</td>
+									<td>
+										Year
+										<br />
+										<input type="number" name="yy" />
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							Gender
+						</td>
+						<td width="49%">
+							Male
+							<input type="radio" name="gender" />
+							Female
+							<input type="radio" name="gender" />
+							Transgender
+							<input type="radio" name="gender" />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							Photo Mismatch
+						</td>
+						<td width="49%"></td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							Signature Mismatch
+						</td>
+						<td width="49%"></td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							Address for communication
+						</td>
+						<td width="49%">
+							Residential
+							<input type="radio" name="address" />
+							&nbsp;&nbsp;&nbsp; Office
+							<input type="radio" name="address" />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							Office Name
+						</td>
+						<td width="49%">
+							<input type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							Flat/Door/Block No.
+						</td>
+						<td width="49%">
+							<input type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							Name of Premises/Building/Village
+						</td>
+						<td width="49%">
+							<input type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							Road/Street/Lane/Post Office
+						</td>
+						<td width="49%">
+							<input type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							Area/Locality/Taluka/Sub-Division
+						</td>
+						<td width="49%">
+							<input type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							Town/City/District
+						</td>
+						<td width="49%">
+							<input type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							State/Union Territory
+						</td>
+						<td width="49%">
+							<select name="state">
+								<option value="">-- Please Select --</option>
+								<option value="1">
+									Andaman & Nicobar Islands
+								</option>
+								<option value="2"> Andhra Pradesh</option>
+								<option value="3"> Arunachal Pradesh</option>
+								<option value="4"> Assam</option>
+								<option value="5"> Bihar</option>
+								<option value="6"> Chandigarh</option>
+								<option value="33"> Chhattisgarh</option>
+								<option value="7">
+									Dadara & Nagar Haveli
+								</option>
+								<option value="8"> Daman &amp; Diu</option>
+								<option value="9"> Delhi</option>
+								<option value="10"> Goa</option>
+								<option value="11"> Gujarat</option>
+								<option value="12"> Haryana</option>
+								<option value="13"> Himachal Pradesh</option>
+								<option value="14"> Jammu &amp; Kashmir</option>
+								<option value="35"> Jharkhand</option>
+								<option value="15"> Karnataka</option>
+								<option value="16"> Kerala</option>
+								<option value="17"> Lakhswadeep</option>
+								<option value="18"> Madhya Pradesh</option>
+								<option value="19"> Maharashtra</option>
+								<option value="20"> Manipur</option>
+								<option value="21"> Meghalaya</option>
+								<option value="22"> Mizoram</option>
+								<option value="23"> Nagaland</option>
+								<option value="24"> Orissa</option>
+								<option value="25"> Pondicherry</option>
+								<option value="26"> Punjab</option>
+								<option value="27"> Rajasthan</option>
+								<option value="28"> Sikkim</option>
+								<option value="29"> Tamil Nadu</option>
+								<option value="36"> Telangana</option>
+								<option value="30"> Tripura</option>
+								<option value="31"> Uttar Pradesh</option>
+								<option value="34"> Uttaranchal</option>
+								<option value="32"> West Bengal</option>
+								<option value="99"> Outside India </option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							PIN
+						</td>
+						<td width="49%">
+							<input type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							Country
+						</td>
+						<td width="49%">
+							<input type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							ZIP
+						</td>
+						<td width="49%">
+							<input type="text" />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+							Email ID
+						</td>
+						<td width="49%">
+							<input type="email" />
+						</td>
+					</tr>
+					<tr>
+						<td width="2%"></td>
+						<td width="49%">
+					        Aadhar Number
+						</td>
+						<td width="49%">
+							<input type="NUMBER" />
+						</td>
+					</tr>
+						<tr>
+						<td width="2%"></td>
+						<td width="49%">
+					        GSTN
+						</td>
+						<td width="49%">
+							<input type="text" />
+						</td>
+					</tr>
+					
+				</tbody>
+			</table>
+			<tr>
+					<td width="2%"></td>
+						<td width="49%">
+					        &nbsp;&nbsp; I declare that all the documents are true to my best belief and have uploaded the relevant data
+						</td>
+
+						<td width="49%">
+							
+							<input type="radio" name="declare" />
+							Click button if true
+					    </td>
+					</tr>	
+		</form>
+		<div style="text-align:center">  
+		<button type="button" >Submit</button>
+        </div>
+
+	</body>
+</html>
